@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+
+  </script>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      -webkit-animation: colorchange 45s infinite;
+      animation: colorchange 45s infinite;
+      height: 48px;
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        background: #FF0000;
+      }
+
+      20% {
+        background: #FF8C00;
+      }
+
+      30% {
+        background: #FFD700;
+      }
+
+      40% {
+        background: #7CFC00;
+      }
+
+      50% {
+        background: #008000;
+      }
+
+      60% {
+        background: #00BFFF;
+      }
+
+      70% {
+        background: #0000CD;
+      }
+
+      80% {
+        background: #FF1493;
+      }
+
+      90% {
+        background: #9400D3;
+      }
+
+      100% {
+        background: #78281F;
+      }
+    }
+
+
+    @keyframes colorchange {
+      0% {
+        background: #FF0000;
+      }
+
+      20% {
+        background: #FF8C00;
+      }
+
+      30% {
+        background: #FFD700;
+      }
+
+      40% {
+        background: #7CFC00;
+      }
+
+      50% {
+        background: #008000;
+      }
+
+      60% {
+        background: #00BFFF;
+      }
+
+      70% {
+        background: #0000CD;
+      }
+
+      80% {
+        background: #FF1493;
+      }
+
+      90% {
+        background: #9400D3;
+      }
+
+      100% {
+        background: #78281F;
+      }
+    }
+
+    li {
+      float: left;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+
+    }
+
+    li a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .socials-share {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .socials-share a {
+      padding: 4px 30px;
+      color: #fff;
+      line-height: 2em;
+      text-decoration: none;
+      border-radius: 2px;
+      white-space: nowrap;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+
+    .socials-share span.fa {
+      margin-right: 3px;
+    }
+
+    .bg-facebook {
+      background: #3a5899;
+    }
+
+    .bg-facebook:hover,
+    .bg-facebook:focus {
+      background: #1d418d;
+    }
+
+    .bg-twitter {
+      background: #00acee;
+    }
+
+    .bg-twitter:hover,
+    .bg-twitter:focus {
+      background: #0b93c7;
+    }
+
+    .bg-google-plus {
+      background: #db4437;
+    }
+
+    .bg-google-plus:hover,
+    .bg-google-plus:focus {
+      background: #bb2a1d;
+    }
+
+    .bg-pinterest {
+      background: #cb1e26;
+    }
+
+    .bg-pinterest:hover,
+    .bg-pinterest:focus {
+      background: #ae0e15;
+    }
+
+    .bg-email {
+      background: #dd5348;
+    }
+
+    .bg-email:hover,
+    .bg-email:focus {
+      background: #ce3f34;
+    }
+    
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.hot { 
+  font-family: 'Open Sans', 'sans-serif';
+  color: #cecece;
+  margin-top: 50px;
+  overflow: hidden;
+  
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  
+  width: 60%;
+  
+  font-size: 2em;
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+  margin-top: 50px;
+  
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; background-color: cadetblue;}
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; background-color: coral;}
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; background-color: darkslateblue;}
+  100% { left: 110%; opacity: 0; }
+}
+/* Carousel */
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
+}
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+.title a {
+  font-size: 1.75em;
+  line-height: 1.15em;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+  
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+.title a:hover {
+  background-position: -99.99% 0;
+}
+  </style>
+  
+  <title>Document</title>
+</head>
+
+<body>
+  <h3 style="font-size: 1.3em;"><b> N-COV19 (Dịch virus corona 2019–20) </b></h3>
+  <ul class="title">
+    <li><a href="./main.html" class="active">Trang chủ</a></li>
+    <li><a href="./char1.html">Đặc điểm</a></li>
+    <li><a href="./soci1.html">Hoạt động</a></li>
+    <li><a href="./prot1.html">Phòng chống</a></li>
+    <li><a href="./advi1.html">Lời khuyên</a></li>
+    <li><a href="./shar.html">Chia sẻ</a></li>
+    <li><a href="./watch.html">Theo dõi</a></li>
+  </ul>
+  
+  <div class="carousel" style="margin-top: 75px;">
+    <div class="carousel-inner">
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/19/d2/ae/19d2ae1a5db2ea3ed05eabc2512b1ef8.jpg" width="1500" height="800">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/750x/3e/5b/8e/3e5b8e3c58c9d6cbf638b83264f2a532.jpg" width="1500" height="800">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/originals/e6/80/0c/e6800ccabbf76c38dd5f5f0f36182554.jpg" width="1500" height="800">
+        </div>
+        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+        <label for="carousel-2" class="carousel-control next control-1">›</label>
+        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+        <label for="carousel-3" class="carousel-control next control-2">›</label>
+        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+        <label for="carousel-1" class="carousel-control next control-3">›</label>
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+    </div>
+</div>
+  <!--End of slide show-->
+
+  <div class="hot">
+  <p class="item-1">Trung Quốc đại lục số ca nhiễm: 80.409	số ca tử vong 3.012	 số ca đã được chữa khỏi 49.856</p>
+
+<p class="item-2">Hàn Quốc	số ca nhiễm: 5.766	số ca tử vong: 35	số ca đã được chữa khỏi:88</p>
+
+<p class="item-3">Iran số ca nhiễm: 2.922	số ca tử vong: 92	 số ca đã được chữa khỏi: 552</p>
+</div>
+
+  <center>
+    <div>
+      <div>
+        <h2>Dịch bệnh COVID-19 (tên chính thức bởi WHO),</h2>
+        <h3>Còn được gọi là dịch viêm phổi cấp do virus corona mới (NCP – do Trung Quốc gọi)</h3>
+      </div>
+      <div style=" font-size: 1.45em; width: 1000px;">
+        <p>
+          Dịch <b> virus corona </b>Vũ Hán hay dịch viêm phổi Vũ Hán là một dịch bệnh truyền nhiễm gây ra bởi virus
+          SARS-CoV 2
+          đang ảnh hưởng đến Trung Quốc đại lục,
+          cùng với các trường hợp ở 63 quốc gia và vùng lãnh thổ khác,<a href="https://ncov.moh.gov.vn/">[4]</a> </p>
+        <p>-Bắt đầu bùng phát vào giữa tháng 12 năm 2019 tại
+          thành phố Vũ Hán thuộc tỉnh Hồ Bắc ở miền Trung Trung Quốc,
+          khi một nhóm người bị viêm phổi không rõ nguyên nhân,
+          đã tiếp xúc chủ yếu với những người buôn bán làm việc tại chợ bán buôn hải sản Hoa Nam,
+          nơi bán động vật sống và được cho là địa điểm bùng phát dịch bệnh đầu tiên – điều này vẫn đang còn nhiều tranh
+          cãi.</p>
+        <p>-Người đầu tiên có các triệu chứng lạ liên quan đến căn bệnh này đã không hề tiếp xúc đến chợ Hoa Nam. Các
+          nhà khoa học Trung Quốc sau đó đã phân lập được một loại coronavirus mới, được WHO lúc đó tạm thời gọi là
+          2019-nCoV, có trình tự gen giống ít nhất 79,5% với SARS-CoV trước đây. <a
+            href="https://www.ijidonline.com/article/S1201-9712(20)30011-4/pdf">[5]</a> <a
+            href="https://promedmail.org/promed-post/?id=6866757">[6]</a> <a
+            href="https://www.scmp.com/news/china/society/article/3046233/wuhan-pneumonia-how-search-source-mystery-illness-unfolded">[7]</a>
+        </p>
+        <p>-Sự lây nhiễm từ người sang người đã được xác nhận cùng với tỉ lệ bùng phát dịch tăng nhanh vào giữa tháng 1
+          năm 2020. <a
+            href="https://www.cnbc.com/2020/01/24/chinas-hubei-province-confirms-15-more-deaths-due-to-coronavirus.html">[8]</a>
+          Thời gian ủ bệnh từ 2 đến 14 ngày,[b] <a
+            href="https://www.cnbc.com/2020/01/24/chinas-hubei-province-confirms-15-more-deaths-due-to-coronavirus.html">[10]</a>
+          đã có bằng chứng rằng bệnh có thể truyền nhiễm trong khoảng thời gian này và trong vài ngày sau khi hồi phục.
+        </p>
+        <p>-Triệu chứng của bệnh bao gồm sốt, ho, khó thở, và thậm chí có thể gây thiệt mạng. <a
+            href="https://www.elsevier.com/connect/coronavirus-information-center">[11]</a> </p>
+      </div>
+    </div>
+
+
+    <footer style="background-color: grey;">
+      <p>Đăng lên bởi nhóm 2 lớp G1</p>
+      <p>Trình bày bởi Phạm Gia Bách và Trần Hải Phong</p>
+      
+    </footer>
+  </center>
+  
+</body>
+
+</html>

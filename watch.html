@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      -webkit-animation: colorchange 45s infinite;
+      animation: colorchange 45s infinite;
+      height: 48px;
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        background: #FF0000;
+      }
+
+      20% {
+        background: #FF8C00;
+      }
+
+      30% {
+        background: #FFD700;
+      }
+
+      40% {
+        background: #7CFC00;
+      }
+
+      50% {
+        background: #008000;
+      }
+
+      60% {
+        background: #00BFFF;
+      }
+
+      70% {
+        background: #0000CD;
+      }
+
+      80% {
+        background: #FF1493;
+      }
+
+      90% {
+        background: #9400D3;
+      }
+
+      100% {
+        background: #78281F;
+      }
+    }
+
+
+    @keyframes colorchange {
+      0% {
+        background: #FF0000;
+      }
+
+      20% {
+        background: #FF8C00;
+      }
+
+      30% {
+        background: #FFD700;
+      }
+
+      40% {
+        background: #7CFC00;
+      }
+
+      50% {
+        background: #008000;
+      }
+
+      60% {
+        background: #00BFFF;
+      }
+
+      70% {
+        background: #0000CD;
+      }
+
+      80% {
+        background: #FF1493;
+      }
+
+      90% {
+        background: #9400D3;
+      }
+
+      100% {
+        background: #78281F;
+      }
+    }
+
+    li {
+      float: left;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    li a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .socials-share {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .socials-share a {
+      padding: 4px 30px;
+      color: #fff;
+      line-height: 2em;
+      text-decoration: none;
+      border-radius: 2px;
+      white-space: nowrap;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+
+    .socials-share span.fa {
+      margin-right: 3px;
+    }
+
+    .bg-facebook {
+      background: #3a5899;
+    }
+
+    .bg-facebook:hover,
+    .bg-facebook:focus {
+      background: #1d418d;
+    }
+
+    .bg-twitter {
+      background: #00acee;
+    }
+
+    .bg-twitter:hover,
+    .bg-twitter:focus {
+      background: #0b93c7;
+    }
+
+    .bg-google-plus {
+      background: #db4437;
+    }
+
+    .bg-google-plus:hover,
+    .bg-google-plus:focus {
+      background: #bb2a1d;
+    }
+
+    .bg-pinterest {
+      background: #cb1e26;
+    }
+
+    .bg-pinterest:hover,
+    .bg-pinterest:focus {
+      background: #ae0e15;
+    }
+
+    .bg-email {
+      background: #dd5348;
+    }
+
+    .bg-email:hover,
+    .bg-email:focus {
+      background: #ce3f34;
+    }
+    table, th, tr, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>N-COV19 (Dịch virus corona 2019–20)</h3>
+  <ul class="title">
+    <li><a href="./main.html">Trang chủ</a></li>
+    <li><a href="./char1.html">Đặc điểm</a></li>
+    <li><a href="./soci1.html">Hoạt động</a></li>
+    <li><a href="./prot1.html">Phòng chống</a></li>
+    <li><a href="./advi1.html">Lời khuyên</a></li>
+    <li><a href="./shar.html">Chia sẻ</a></li>
+    <li><a href="./watch.html" class="active">Theo dõi</a></li>
+  </ul>
+
+
+
+  <h1>Bản đồ Google Map</h1>
+
+  <div class="mapouter">
+    <div class="gmap_canvas"><iframe width="1200" height="600" id="gmap_canvas"
+        src="https://maps.google.com/maps?q=Hanoi&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"
+        marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com">whats my current
+        location</a></div>
+    <style>
+      .mapouter {
+        position: relative;
+        text-align: right;
+        height: 600px;
+        width: 1200px;
+      }
+
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 600px;
+        width: 1500px;
+      }
+      .title a {
+  font-size: 1.75em;
+  line-height: 1.15em;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+  
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+.title a:hover {
+  background-position: -99.99% 0;
+}
+    </style>
+    <script>
+      function submitForm(e) {
+            e.preventDefault();
+            document.querySelector("#registration-form").setAttribute("style", "display: none");
+            document.querySelector("#registration-block").style.opacity = "1"
+
+        }
+    </script>
+  </div>
+
+  <div style="margin-top: 100px; text-align: center;">
+    <img src="./Annotation 2020-03-03 200714.jpg" alt="" width="1500px">
+    <a href="https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd">nguồn dữ liệu trên sẽ được cập nhật hằng ngày ở đây vì đây chỉ là minh họa cho thấy sự lan ra của virus corona</a>
+    <p> <a
+        href="https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200218-sitrep-29-covid-19.pdf?sfvrsn=6262de9e_2">thông
+        tin phân tích từ WHO</a></p>
+  </div>
+      <div>
+        <table>
+          <tr>
+            <td rowspan="35"><b>Các quốc gia trên thế giới nhiễm virus corona</b></td>
+            <td><b> Quốc Gia</b></td>
+            <td><b>Số người nhiễm</b></td>
+            <td><b>Số người khỏi bệnh</b></td>
+            <td><b>Số người chết</b></td>
+          </tr>
+          <tr>
+            <td>Trung Quốc</td>
+            <td>80422</td>
+            <td>47518</td>
+            <td>2945</td>
+          </tr>
+          <tr>
+            <td>Hàn Quốc</td>
+            <td>5328</td>
+            <td>34</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td>Nhật Bản</td>
+            <td>293</td>
+            <td>43</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Italy</td>
+            <td>2502</td>
+            <td>160</td>
+            <td>79</td>
+          </tr>
+          <tr>
+            <td>Iran</td>
+            <td>2336</td>
+            <td>435</td>
+            <td>77</td>
+          </tr>
+          <tr>
+            <td>Đức</td>
+            <td>203</td>
+            <td>16</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Mỹ</td>
+            <td>118</td>
+            <td>9</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>Pháp</td>
+            <td>212</td>
+            <td>12</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Tây Ban Nha</td>
+            <td>165</td>
+            <td>2</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Thụy Sĩ</td>
+            <td>58</td>
+            <td>2</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Kuwait</td>
+            <td>56</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Hong Kong</td>
+            <td>101</td>
+            <td>36</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Anh</td>
+            <td>40</td>
+            <td>8</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Macau</td>
+            <td>10</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Đài Loan</td>
+            <td>41</td>
+            <td>28</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Thái Lan</td>
+            <td>43</td>
+            <td>12</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Singapore</td>
+            <td>108</td>
+            <td>78</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Campuchia</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Australia</td>
+            <td>34</td>
+            <td>18</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Malaysia</td>
+            <td>29</td>
+            <td>22</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Canada</td>
+            <td>27</td>
+            <td>7</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>UAE</td>
+            <td>21</td>
+            <td>16</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Ấn Độ</td>
+            <td>6</td>
+            <td>3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Nga</td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Philipines</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Nepal</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Bỉ</td>
+            <td>8</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Phần Lan</td>
+            <td>7</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Thụy Điển</td>
+            <td>15</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Afghanistan</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Barain</td>
+            <td>49</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Sri Lanka</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Ai Cập</td>
+            <td>2</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Việt Nam</td>
+            <td>16</td>
+            <td>16</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Tổng</b></td>
+            <td>93036</td>
+            <td>48595</td>
+            <td>3168</td>
+          </tr>
+        </table>
+      </div>
+
+    <table style="margin-top: 50px;">
+      <tr>
+        <td rowspan="10"><b> Các trang web cần thiết</b></td>
+        <td><a href="https://news.zing.vn/dich-viem-phoi-corona.html?utm_source=self&utm_medium=web&utm_campaign=home_top_trending_topic_corona">zing</a></td>
+        <td><a href="https://thanhnien.vn/tin-tuc/viem-phoi-vu-han.html">Thanh niên</a></td>
+      </tr>
+      <tr>
+          <td><a href="https://vnexpress.net/dich-viem-phoi-corona?utm_source=vne&utm_medium=desktop_trentintop&utm_campaign=viruscorona">vnexpress</a></td>
+          <td><a href="https://tuoitre.vn/phong-chong-virus-corona-e583.htm">Tuổi Trẻ</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://kenh14.vn/virus-corona-la-tinh-trang-khan-cap-toan-cau.html">kenh14</a></td>
+        <td><a href="https://vtv.vn/dong-su-kien/dich-benh-covid-19-242.htm">VTV news</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://dantri.com.vn/suc-khoe/virus-corona-vu-han.htm?utm_source=home&utm_campaign=0&utm_medium=3">Dan tri</a></td>
+        <td><a href="https://www.doisongphapluat.com/su-kien/1183/benh-viem-phoi-cap-do-virus-corona.html">Đời sống pháp luật</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://vietnamnet.vn/vn/virus-corona/?vnn_source=camp&vnn_medium=bannercotmoinong">vietnamnet</a></td>
+        <td><a href="https://moh.gov.vn/">Bộ Y Tế(khuyên dùng)</a></td>
+      </tr>
+      
+    </table>
+    <div style="margin-top: 50px;">
+      <table>
+        <tr>
+          <td rowspan="3" style="color: red;"><b>Top 3 thông tin nóng</b></td>
+          <td><a href="https://news.zing.vn/khach-nguoi-nhat-mac-covid-19-di-tren-chuyen-bay-cua-vietnam-airlines-post1046720.html">Khách người Nhật mắc Covid-19 đi trên chuyến bay của Vietnam Airlines</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://vtv.vn/doi-song/suc-hut-cua-ca-khuc-vu-dieu-rua-tay-20200304202109088.htm">Sức hút của ca khúc "Vũ điệu rửa tay"</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.moh.gov.vn/web/guest/tin-noi-bat/-/asset_publisher/3Yst7YhbkA5j/content/viet-nam-u-nang-luc-ngan-chan-dich-benh-ncov">Việt Nam đủ năng lực ngăn chặn dịch bệnh nCoV</a></td>
+        </tr>
+      </table>
+  </div>
+  <form onkeyup="checkButtons()" onsubmit="submitForm(event)">
+  <div id="registration-form">
+      <h3>Xin ý kiến tham khảo</h3>
+      <table>
+        <tr>
+          <td>1.Theo bạn, nội dung cung cấp trên Trang của mình rất đầy đủ</td>
+          <td>
+            <input type="radio" name="info1" id="one" value="Rất tốt =)))" required>Rất tốt =)))
+          <p> <input type="radio" name="info1" id="fif" value="Khá Lắm =))" required>Khá Lắm =))</p> 
+          <p>  <input type="radio" name="info1" id="twe" value="Bình thường :)" required>Bình thường :)</p>
+          <p> <input type="radio" name="info1" id="zer" value="Phế :(" required>Phế :(</p> 
+          </td>
+        </tr>
+        <tr>
+          <td>2.Bạn có nghĩ rằng đây là thời gian đỉnh điểm của dịch virut này trên toàn thế giới</td>
+          <td>
+            <input type="radio" name="info2" id="yes" value="Chắc chắn rồi" required>Chắc chắn rồi
+          <p> <input type="radio" name="info2" id="may" value="Có lẽ rơi vào khoảng vài tháng nữa" required>Có lẽ rơi vào khoảng vài tháng nữa</p> 
+          <p>  <input type="radio" name="info2" id="nop" value="Chưa phải" required>Chưa phải</p>
+          <p> <input type="radio" name="info2" id="opi" value="Ý kiến khác" required>Ý kiến khác</p> 
+          </td>
+        </tr>
+        <tr>
+          <td>3.Bạn có chắc rằng việt nam chúng ta sau vẫn sẽ còn nhiều ca mắc nữa mặc dù theo tình hình thì số người bị nhiễm corona đã được chữa khỏi</td>
+          <td>
+            <input type="radio" name="info3" id="nop1" value="Không hẳn đến như thế đâu" required>Không hẳn đến như thế đâu
+          <p> <input type="radio" name="info3" id="may1" value="Dăm ba hôm hoặc tuần" required>Dăm ba hôm hoặc tuần</p> 
+          <p>  <input type="radio" name="info3" id="yes1" value="Chắc chắn rồi" required>Chắc chắn rồi</p>
+          <p> <input type="radio" name="info3" id="opi1" value="Ý kiến khác" required>Ý kiến khác</p> 
+          </td>
+        </tr>
+        <tr>
+          <td>4.Bạn có nghĩ rằng học sinh/sinh viên nên nghỉ học hết tháng 3?</td>
+          <td>
+            <input type="radio" name="info4" id="all" value="Nghỉ luôn đi cho lành" required>Nghỉ luôn đi cho lành
+          <p> <input type="radio" name="info4" id="any" value="Có Nghỉ nhưng mà cho nghỉ ít tuần thôi" required>Có Nghỉ nhưng mà cho nghỉ ít tuần thôi</p> 
+          <p>  <input type="radio" name="info4" id="got" value="Đi học đê" required>Đi học đê</p>
+          <p> <input type="radio" name="info4" id="opi2" value="Ý kiến khác" required>Ý kiến khác</p> 
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Calculate"  id="btnSubmit">
+            <input type="reset"  id="btnReset">
+          </td>
+        </tr>
+      </table>
+  </div>
+</form>
+  <div id="registration-block" style="opacity: 0; transition: all 0.2s;">
+    <h2>Cảm ơn bạn</h2>
+  </div>
+
+  <div style="background-color: red; width: 1500px; height: 200px; ">
+    <h3 style="text-align: center;">ĐƯỜNG DÂY NÓNG</h3>
+    <p>Đường dây nóng tiếp nhận thông tin về dịch viêm phổi cấp do virus Corona (nCoV).<a
+        href="tel:+19003228">19003228</a></p>
+    <p>số điện thoại đường dây nóng của Cục Y tế dự phòng (0989671115 và 0963851919) để tiếp nhận các thông tin, ý kiến
+      về tình hình dịch bệnh viêm phổi cấp trên toàn quốc và tư vấn cách phòng chống dịch bệnh nguy hiểm này.
+      <a href="tel:+84989671115">0989671115</a></p>
+    <a href="tel:+84963851919">0963851919</a></p>
+  </div>
+  
+  <center>
+
+    <footer style="background-color: grey;">
+      <p>Đăng lên bởi nhóm 2 lớp G1</p>
+      <p>Trình bày bởi Đỗ Thịnh Phước và Trần Hải Phong</p>
+      
+
+    </footer>
+  </center>
+</body>
+
+</html>
